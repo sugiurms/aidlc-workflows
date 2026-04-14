@@ -298,15 +298,35 @@
 
 ## ステップ 8: 状態追跡の更新
 
-完了メッセージを提示する:
+`aidlc-docs/aidlc-state.md` を更新する:
+- ビルドとテストステージを完了としてマークする
+- 現在のステータスを更新する
+
+---
+
+## ステップ 9: ユーザーへの結果の提示
+
+以下の構造で完了メッセージを提示する:
+     1. **完了アナウンス**（必須）: 常にこれで開始する:
 
 ```markdown
 # 🔨 Build and Test Complete
+```
 
-[AI が生成したビルドとテストの結果のサマリー（箇条書き）]
+     2. **AI サマリー**（任意）: ビルドとテスト結果の構造化された箇条書きサマリーを提供する
+        - フォーマット: 「Build and test has completed with the following results:」
+        - ビルドステータスとアーティファクトをリストする
+        - テスト結果をカテゴリ別にリストする（ユニット、統合、パフォーマンスなど）
+        - 生成された手順ファイルをリストする
+        - ワークフローの指示を含めない（「確認してください」「お知らせください」「次のフェーズに進んでください」「進む前に」）
+        - 事実に基づいたコンテンツに集中する
+     3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終了する:
 
+```markdown
 > **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the build and test results at: `aidlc-docs/construction/build-and-test/`
+> Please examine the build and test summary at: `aidlc-docs/construction/build-and-test/build-and-test-summary.md`
+
+
 
 > **🚀 <u>**WHAT'S NEXT?**</u>**
 >
