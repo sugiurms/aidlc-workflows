@@ -114,21 +114,21 @@
 ### 12. 完了メッセージの提示
 
 ```markdown
-# 🏗️ Application Design Complete
+# 🏗️ アプリケーション設計完了
 
 [作成されたアプリケーション設計アーティファクトの AI 生成サマリー（箇条書き）]
 
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the application design artifacts at: `aidlc-docs/inception/application-design/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のアプリケーション設計成果物を確認してください: `aidlc-docs/inception/application-design/`
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the application design if required
+> 🔧 **変更を依頼** - 必要に応じてアプリケーション設計の変更を依頼する
 > [ユニット生成がスキップされる場合:]
-> 📝 **Add Units Generation** - Choose to include **Units Generation** stage (currently skipped)
-> ✅ **Approve & Continue** - Approve design and proceed to **[Units Generation/CONSTRUCTION PHASE]**
+> 📝 **ユニット生成を追加** - **ユニット生成** ステージを含める（現在スキップされています）
+> ✅ **承認して続行** - 設計を承認して **[ユニット生成/CONSTRUCTION フェーズ]** に進む
 ```
 
 ### 13. 明示的な承認の待機

@@ -73,17 +73,17 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the infrastructure design at: `aidlc-docs/construction/[unit-name]/infrastructure-design/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のインフラストラクチャ設計を確認してください: `aidlc-docs/construction/[unit-name]/infrastructure-design/`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the infrastructure design based on your review
-> ✅ **Continue to Next Stage** - Approve infrastructure design and proceed to **Code Generation**
+> 🔧 **変更を依頼** - レビュー内容に基づいてインフラストラクチャ設計の変更を依頼する
+> ✅ **次のステージへ進む** - インフラストラクチャ設計を承認して **コード生成** に進む
 
 ---
 ```

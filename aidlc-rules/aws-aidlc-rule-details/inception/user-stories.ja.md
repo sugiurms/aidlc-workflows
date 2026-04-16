@@ -258,7 +258,7 @@
      1. **完了告知**（必須）: 常にこれで始める:
 
 ```markdown
-# 📚 User Stories Complete
+# 📚 ユーザーストーリー完了
 ```
 
      2. **AI サマリー**（省略可）: 生成されたストーリーの構造化された箇条書きサマリーを提供する
@@ -271,17 +271,17 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the user stories and personas at: `aidlc-docs/inception/user-stories/stories.md` and `aidlc-docs/inception/user-stories/personas.md`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のユーザーストーリーとペルソナを確認してください: `aidlc-docs/inception/user-stories/stories.md` および `aidlc-docs/inception/user-stories/personas.md`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** -  Ask for modifications to the stories or personas based on your review  
-> ✅ **Approve & Continue** - Approve user stories and proceed to **Workflow Planning**
+> 🔧 **変更を依頼** - レビュー内容に基づいてストーリーまたはペルソナの変更を依頼する
+> ✅ **承認して続行** - ユーザーストーリーを承認して **ワークフロー計画** に進む
 
 ---
 ```

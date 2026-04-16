@@ -282,27 +282,27 @@
 `aidlc-docs/aidlc-state.md` を更新する:
 
 ```markdown
-## Reverse Engineering Status
-- [x] Reverse Engineering - Completed on [タイムスタンプ]
-- **Artifacts Location**: aidlc-docs/inception/reverse-engineering/
+## リバースエンジニアリングステータス
+- [x] リバースエンジニアリング - [タイムスタンプ] に完了
+- **成果物の場所**: aidlc-docs/inception/reverse-engineering/
 ```
 
 ## ステップ 12: 完了メッセージのユーザーへの提示
 
 ```markdown
-# 🔍 Reverse Engineering Complete
+# 🔍 リバースエンジニアリング完了
 
 [分析から得られた主要な発見の AI 生成サマリー（箇条書き）]
 
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the reverse engineering artifacts at: `aidlc-docs/inception/reverse-engineering/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のリバースエンジニアリング成果物を確認してください: `aidlc-docs/inception/reverse-engineering/`
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the reverse engineering analysis if required
-> ✅ **Approve & Continue** - Approve analysis and proceed to **Requirements Analysis**
+> 🔧 **変更を依頼** - レビュー内容に基づいてリバースエンジニアリング分析の変更を依頼する
+> ✅ **承認して続行** - 分析を承認して **要件分析** に進む
 ```
 
 ## ステップ 13: ユーザーの承認を待機する

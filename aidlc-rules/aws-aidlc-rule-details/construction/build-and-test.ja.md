@@ -310,11 +310,11 @@
      1. **完了アナウンス**（必須）: 常にこれで開始する:
 
 ```markdown
-# 🔨 Build and Test Complete
+# 🔨 ビルドとテスト完了
 ```
 
      2. **AI サマリー**（任意）: ビルドとテスト結果の構造化された箇条書きサマリーを提供する
-        - フォーマット: 「Build and test has completed with the following results:」
+        - フォーマット: 「ビルドとテストが以下の結果で完了しました:」
         - ビルドステータスとアーティファクトをリストする
         - テスト結果をカテゴリ別にリストする（ユニット、統合、パフォーマンスなど）
         - 生成された手順ファイルをリストする
@@ -323,17 +323,17 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終了する:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the build and test summary at: `aidlc-docs/construction/build-and-test/build-and-test-summary.md`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のビルドとテストのサマリーを確認してください: `aidlc-docs/construction/build-and-test/build-and-test-summary.md`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the build and test instructions based on your review
-> ✅ **Approve & Continue** - Approve build and test results and proceed to **Operations**
+> 🔧 **変更を依頼** - レビュー内容に基づいてビルドとテストの手順の変更を依頼する
+> ✅ **承認して続行** - ビルドとテストの結果を承認して **オペレーション** に進む
 
 ---
 ```

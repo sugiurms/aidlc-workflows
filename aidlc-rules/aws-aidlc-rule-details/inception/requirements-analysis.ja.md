@@ -153,7 +153,7 @@ requirement-verification-questions.md のすべての質問が回答されて検
      1. **完了告知**（必須）: 常にこれで始める:
 
 ```markdown
-# 🔍 Requirements Analysis Complete
+# 🔍 要件分析完了
 ```
 
      2. **AI サマリー**（省略可）: 要件の構造化された箇条書きサマリーを提供する
@@ -166,24 +166,24 @@ requirement-verification-questions.md のすべての質問が回答されて検
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the requirements document at: `aidlc-docs/inception/requirements/requirements.md`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下の要件ドキュメントを確認してください: `aidlc-docs/inception/requirements/requirements.md`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** -  Ask for modifications to the requirements if required based on your review
+> 🔧 **変更を依頼** - レビュー内容に基づいて要件の変更を依頼する
 > [ユーザーストーリーがスキップされる場合はこのオプションを追加:]
-> 📝 **Add User Stories** - Choose to Include **User Stories** stage (currently skipped based on project simplicity)
-> ✅ **Approve & Continue** - Approve requirements and proceed to **[User Stories/Workflow Planning]**
+> 📝 **ユーザーストーリーを追加** - **ユーザーストーリー** ステージを含める（現在はプロジェクトのシンプルさに基づいてスキップされています）
+> ✅ **承認して続行** - 要件を承認して **[ユーザーストーリー/ワークフロー計画]** に進む
 
 ---
 ```
 
-**注記**: ユーザーストーリーステージがスキップされる場合にのみ「Add User Stories」オプションを含める。[User Stories/Workflow Planning] を実際の次のステージ名に置き換える。
+**注記**: ユーザーストーリーステージがスキップされる場合にのみ「ユーザーストーリーを追加」オプションを含める。[ユーザーストーリー/ワークフロー計画] を実際の次のステージ名に置き換える。
 
    - 進行する前に明示的なユーザーの承認を待つ
    - タイムスタンプ付きで承認応答を記録する

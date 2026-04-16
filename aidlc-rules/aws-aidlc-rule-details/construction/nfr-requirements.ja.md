@@ -73,17 +73,17 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the NFR requirements at: `aidlc-docs/construction/[unit-name]/nfr-requirements/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下の非機能要件を確認してください: `aidlc-docs/construction/[unit-name]/nfr-requirements/`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the NFR requirements based on your review  
-> ✅ **Continue to Next Stage** - Approve NFR requirements and proceed to **[next-stage-name]**
+> 🔧 **変更を依頼** - レビュー内容に基づいて非機能要件の変更を依頼する
+> ✅ **次のステージへ進む** - 非機能要件を承認して **[次のステージ名]** に進む
 
 ---
 ```

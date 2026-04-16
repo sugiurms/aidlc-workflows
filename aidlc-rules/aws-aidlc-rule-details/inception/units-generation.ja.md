@@ -129,19 +129,19 @@
 ## ステップ 16: 完了メッセージの提示
 
 ```markdown
-# 🔧 Units Generation Complete
+# 🔧 ユニット生成完了
 
 [作成されたユニットと分解の AI 生成サマリー（箇条書き）]
 
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the units generation artifacts at: `aidlc-docs/inception/application-design/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下のユニット生成成果物を確認してください: `aidlc-docs/inception/application-design/`
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the units generation if required
-> ✅ **Approve & Continue** - Approve units and proceed to **CONSTRUCTION PHASE**
+> 🔧 **変更を依頼** - 必要に応じてユニット生成の変更を依頼する
+> ✅ **承認して続行** - ユニットを承認して **CONSTRUCTION フェーズ** に進む
 ```
 
 ## ステップ 17: 明示的な承認の待機

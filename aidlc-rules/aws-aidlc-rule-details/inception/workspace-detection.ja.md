@@ -47,21 +47,21 @@
 `aidlc-docs/aidlc-state.md` を作成する:
 
 ```markdown
-# AI-DLC State Tracking
+# AI-DLC 状態トラッキング
 
-## Project Information
-- **Project Type**: [Greenfield/Brownfield]
-- **Start Date**: [ISO タイムスタンプ]
-- **Current Stage**: INCEPTION - Workspace Detection
+## プロジェクト情報
+- **プロジェクトタイプ**: [グリーンフィールド/ブラウンフィールド]
+- **開始日**: [ISO タイムスタンプ]
+- **現在のステージ**: INCEPTION - ワークスペース検出
 
-## Workspace State
-- **Existing Code**: [Yes/No]
-- **Reverse Engineering Needed**: [Yes/No]
-- **Workspace Root**: [絶対パス]
+## ワークスペース状態
+- **既存コード**: [あり/なし]
+- **リバースエンジニアリング必要**: [あり/なし]
+- **ワークスペースルート**: [絶対パス]
 
-## Code Location Rules
-- **Application Code**: ワークスペースルート（aidlc-docs/ の中に置かない）
-- **Documentation**: aidlc-docs/ のみ
+## コード配置ルール
+- **アプリケーションコード**: ワークスペースルート（aidlc-docs/ の中に置かない）
+- **ドキュメント**: aidlc-docs/ のみ
 - **Structure patterns**: code-generation.md のクリティカルルールを参照
 
 ## Stage Progress
@@ -72,21 +72,21 @@
 
 **ブラウンフィールドプロジェクトの場合:**
 ```markdown
-# 🔍 Workspace Detection Complete
+# 🔍 ワークスペース検出完了
 
-Workspace analysis findings:
-• **Project Type**: Brownfield project
+ワークスペース分析結果:
+• **プロジェクトタイプ**: ブラウンフィールドプロジェクト
 • [ワークスペースの調査結果の AI 生成サマリー（箇条書き）]
-• **Next Step**: Proceeding to **Reverse Engineering** to analyze existing codebase...
+• **次のステップ**: **リバースエンジニアリング** に進み、既存のコードベースを分析します...
 ```
 
 **グリーンフィールドプロジェクトの場合:**
 ```markdown
-# 🔍 Workspace Detection Complete
+# 🔍 ワークスペース検出完了
 
-Workspace analysis findings:
-• **Project Type**: Greenfield project
-• **Next Step**: Proceeding to **Requirements Analysis**...
+ワークスペース分析結果:
+• **プロジェクトタイプ**: グリーンフィールドプロジェクト
+• **次のステップ**: **要件分析** に進みます...
 ```
 
 ## ステップ 6: 自動進行

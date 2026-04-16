@@ -93,17 +93,17 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the functional design artifacts at: `aidlc-docs/construction/[unit-name]/functional-design/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下の機能設計成果物を確認してください: `aidlc-docs/construction/[unit-name]/functional-design/`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the functional design based on your review  
-> ✅ **Continue to Next Stage** - Approve functional design and proceed to **[next-stage-name]**
+> 🔧 **変更を依頼** - レビュー内容に基づいて機能設計の変更を依頼する
+> ✅ **次のステージへ進む** - 機能設計を承認して **[次のステージ名]** に進む
 
 ---
 ```

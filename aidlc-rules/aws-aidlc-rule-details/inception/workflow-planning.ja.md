@@ -381,17 +381,17 @@ flowchart TD
 ### 🟡 OPERATIONS PHASE
 - [ ] Operations - PLACEHOLDER
 
-## Current Status
-- **Lifecycle Phase**: INCEPTION
-- **Current Stage**: Workflow Planning Complete
-- **Next Stage**: [実行する次のステージ]
-- **Status**: Ready to proceed
+## 現在のステータス
+- **ライフサイクルフェーズ**: INCEPTION
+- **現在のステージ**: ワークフロー計画完了
+- **次のステージ**: [実行する次のステージ]
+- **ステータス**: 続行可能
 ```
 
 ## ステップ 9: ユーザーへの計画の提示
 
 ```markdown
-# 📋 Workflow Planning Complete
+# 📋 ワークフロー計画完了
 
 以下に基づいて包括的な実行計画を作成しました:
 - あなたのリクエスト: [サマリー]
@@ -438,17 +438,17 @@ flowchart TD
 
 **見積もり所要時間**: [期間]
 
-> **📋 <u>**REVIEW REQUIRED:**</u>**
-> Please examine the execution plan at: `aidlc-docs/inception/plans/execution-plan.md`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下の実行計画を確認してください: `aidlc-docs/inception/plans/execution-plan.md`
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the execution plan if required
+> 🔧 **変更を依頼** - 必要に応じて実行計画の変更を依頼する
 > [スキップされるステージがある場合:]
-> 📝 **Add Skipped Stages** - Choose to include stages currently marked as SKIP
-> ✅ **Approve & Continue** - Approve plan and proceed to **[Next Stage Name]**
+> 📝 **スキップされたステージを追加** - 現在スキップとマークされているステージを含める
+> ✅ **承認して続行** - 計画を承認して **[次のステージ名]** に進む
 ```
 
 ## ステップ 10: ユーザー応答の処理
@@ -462,12 +462,12 @@ flowchart TD
 `aidlc-docs/audit.md` にログを記録する:
 
 ```markdown
-## Workflow Planning - Approval
-**Timestamp**: [ISO タイムスタンプ]
-**AI Prompt**: "Ready to proceed with this plan?"
-**User Response**: "[ユーザーの完全な生の応答]"
-**Status**: [Approved/Changes Requested]
-**Context**: ワークフロー計画が実行する [X] ステージで作成された
+## ワークフロー計画 - 承認
+**タイムスタンプ**: [ISO タイムスタンプ]
+**AI プロンプト**: "この計画で進めてよろしいですか?"
+**ユーザーの応答**: "[ユーザーの完全な生の応答]"
+**ステータス**: [承認/変更依頼]
+**コンテキスト**: ワークフロー計画が実行する [X] ステージで作成された
 
 ---
 ```

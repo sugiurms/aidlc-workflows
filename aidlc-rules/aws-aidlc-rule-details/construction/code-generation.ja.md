@@ -140,19 +140,19 @@
      3. **フォーマット済みワークフローメッセージ**（必須）: 常にこの正確なフォーマットで終わる:
 
 ```markdown
-> **📋 <u>**REVIEW REQUIRED:**</u>**  
-> Please examine the generated code at:
-> - **Application Code**: `[actual-workspace-path]`
-> - **Documentation**: `aidlc-docs/construction/[unit-name]/code/`
+> **📋 <u>**レビューをお願いします:**</u>**
+> 以下の生成されたコードを確認してください:
+> - **アプリケーションコード**: `[actual-workspace-path]`
+> - **ドキュメント**: `aidlc-docs/construction/[unit-name]/code/`
 
 
 
-> **🚀 <u>**WHAT'S NEXT?**</u>**
+> **🚀 <u>**次のステップ**</u>**
 >
-> **You may:**
+> **以下から選択してください:**
 >
-> 🔧 **Request Changes** - Ask for modifications to the generated code based on your review  
-> ✅ **Continue to Next Stage** - Approve code generation and proceed to **[next-unit/Build & Test]**
+> 🔧 **変更を依頼** - レビュー内容に基づいて生成されたコードの変更を依頼する
+> ✅ **次のステージへ進む** - コード生成を承認して **[次のユニット/ビルドとテスト]** に進む
 
 ---
 ```
