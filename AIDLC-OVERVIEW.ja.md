@@ -53,18 +53,20 @@ flowchart TD
 
     subgraph CONSTRUCTION ["CONSTRUCTION フェーズ — どのように構築するか"]
         subgraph UnitLoop ["ユニット単位のループ（各ユニットで繰り返し）"]
-            FD["1. 機能設計<br/><i>条件付き</i>"]
-            FD -->|NFR 考慮あり| NFR_REQ
-            FD -->|NFR 不要| CG
-            NFR_REQ["2. NFR 要件<br/><i>条件付き</i>"]
+            direction TB
+            FD_check{機能設計<br/>が必要?}
+            FD_check -->|はい| FD["1. 機能設計<br/><i>条件付き</i>"]
+            FD_check -->|いいえ| NFR_check
+            FD --> NFR_check{NFR 要件<br/>が必要?}
+            NFR_check -->|はい| NFR_REQ["2. NFR 要件<br/><i>条件付き</i>"]
+            NFR_check -->|いいえ| INFRA_check
             NFR_REQ --> NFR_DES["3. NFR 設計<br/><i>条件付き</i>"]
-            NFR_DES -->|インフラ変更あり| INFRA
-            NFR_DES -->|インフラ変更なし| CG
-            INFRA["4. インフラストラクチャ設計<br/><i>条件付き</i>"]
-            INFRA --> CG
-            CG["5. コード生成<br/><i>常時実行（計画 → 生成）</i>"]
+            NFR_DES --> INFRA_check{インフラ設計<br/>が必要?}
+            INFRA_check -->|はい| INFRA["4. インフラストラクチャ設計<br/><i>条件付き</i>"]
+            INFRA_check -->|いいえ| CG
+            INFRA --> CG["5. コード生成<br/><i>常時実行（計画 → 生成）</i>"]
         end
-        CG -->|次のユニットあり| FD
+        CG -->|次のユニットあり| FD_check
         CG -->|全ユニット完了| BT
         BT["6. ビルドとテスト<br/><i>常時実行</i>"]
     end
