@@ -7,12 +7,12 @@
 この拡張機能が読み込まれると、要件分析の確認質問に以下の質問が自動的に含まれます:
 
 ```markdown
-## Question: Security Extensions
-Should security extension rules be enforced for this project?
+## 質問: セキュリティ拡張機能
+このプロジェクトにセキュリティ拡張ルールを適用しますか?
 
-A) Yes — enforce all SECURITY rules as blocking constraints (recommended for production-grade applications)
-B) No — skip all SECURITY rules (suitable for PoCs, prototypes, and experimental projects)
-X) Other (please describe after [Answer]: tag below)
+A) はい — すべての SECURITY ルールをブロッキング制約として適用する（本番グレードのアプリケーションに推奨）
+B) いいえ — すべての SECURITY ルールをスキップする（PoC、プロトタイプ、実験的プロジェクト向け）
+X) その他（以下の [Answer]: タグの後に記述してください）
 
 [Answer]:
 ```

@@ -7,13 +7,13 @@
 この拡張機能が読み込まれると、要件分析の確認質問に以下の質問が自動的に含まれます:
 
 ```markdown
-## Question: Property-Based Testing Extension
-Should property-based testing (PBT) rules be enforced for this project?
+## 質問: プロパティベーステスト拡張機能
+このプロジェクトにプロパティベーステスト（PBT）ルールを適用しますか?
 
-A) Yes — enforce all PBT rules as blocking constraints (recommended for projects with business logic, data transformations, serialization, or stateful components)
-B) Partial — enforce PBT rules only for pure functions and serialization round-trips (suitable for projects with limited algorithmic complexity)
-C) No — skip all PBT rules (suitable for simple CRUD applications, UI-only projects, or thin integration layers with no significant business logic)
-X) Other (please describe after [Answer]: tag below)
+A) はい — すべての PBT ルールをブロッキング制約として適用する（ビジネスロジック、データ変換、シリアライゼーション、ステートフルコンポーネントを含むプロジェクトに推奨）
+B) 部分的に適用 — 純粋関数とシリアライゼーションのラウンドトリップにのみ PBT ルールを適用する（アルゴリズムの複雑さが限定的なプロジェクト向け）
+C) いいえ — すべての PBT ルールをスキップする（シンプルな CRUD アプリケーション、UI のみのプロジェクト、重要なビジネスロジックのない薄い統合レイヤー向け）
+X) その他（以下の [Answer]: タグの後に記述してください）
 
 [Answer]:
 ```
