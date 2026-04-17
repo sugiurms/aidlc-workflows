@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # AIDLC 日本語スキルをインストールする
 # 使用法: ./scripts/install-skill.sh [--project <dest> | --user]
-#   --user           : ユーザーレベル (~/.claude/skills/aidlc-ja/) にインストール（デフォルト）
-#   --project <dest> : 指定したプロジェクトディレクトリにインストール (<dest>/.claude/skills/aidlc-ja/)
+#   --user           : ユーザーレベル (~/.claude/skills/aidlc/) にインストール（デフォルト）
+#   --project <dest> : 指定したプロジェクトディレクトリにインストール (<dest>/.claude/skills/aidlc/)
 
 set -euo pipefail
 
@@ -14,7 +14,7 @@ MODE="${1:---user}"
 
 case "${MODE}" in
     --user)
-        DEST="${HOME}/.claude/skills/aidlc-ja"
+        DEST="${HOME}/.claude/skills/aidlc"
         ;;
     --project)
         if [ -z "${2:-}" ]; then
@@ -22,7 +22,7 @@ case "${MODE}" in
             echo "使用法: $0 --project <dest>" >&2
             exit 1
         fi
-        DEST="${2}/.claude/skills/aidlc-ja"
+        DEST="${2}/.claude/skills/aidlc"
         ;;
     *)
         echo "使用法: $0 [--project <dest> | --user]" >&2
@@ -34,9 +34,9 @@ esac
 
 rm -rf "${DEST}"
 mkdir -p "$(dirname "${DEST}")"
-cp -r "${REPO_ROOT}/dist/aidlc-ja" "${DEST}"
+cp -r "${REPO_ROOT}/dist/aidlc" "${DEST}"
 
 VERSION=$(cat "${REPO_ROOT}/aidlc-rules/VERSION")
-echo "aidlc-ja スキル v${VERSION} を ${DEST} にインストールしました"
+echo "aidlc(ja) スキル v${VERSION} を ${DEST} にインストールしました"
 echo ""
 echo "使い方: Claude Code で /aidlc <プロジェクトの説明> を実行してください"
