@@ -28,11 +28,16 @@
 ## ステップ 2: 必須ユニットアーティファクトを計画に含める
 以下の必須アーティファクトをユニット計画に**常に**含める:
 - [ ] ユニット定義と責務を含む `aidlc-docs/inception/application-design/unit-of-work.md` を生成する
-- [ ] 依存関係マトリクスを含む `aidlc-docs/inception/application-design/unit-of-work-dependency.md` を生成する
+- [ ] 依存関係マトリクスと Context Map を含む `aidlc-docs/inception/application-design/unit-of-work-dependency.md` を生成する
 - [ ] ストーリーをユニットにマッピングする `aidlc-docs/inception/application-design/unit-of-work-story-map.md` を生成する
 - [ ] **グリーンフィールドのみ**: コード組織化戦略を `unit-of-work.md` に文書化する（構造パターンについては code-generation.md を参照）
 - [ ] ユニットの境界と依存関係を検証する
 - [ ] すべてのストーリーがユニットに割り当てられていることを確認する
+
+**Context Map の必須セクション**（`unit-of-work-dependency.md` 内に含める）:
+- **関係パターンマトリクス**: 各ユニットペア間の DDD Context Map 関係パターンを定義する（Shared Kernel / Customer/Supplier / Conformist / Anti-Corruption Layer / Open Host Service / Published Language / Separate Ways / Partnership）
+- **関係パターンの根拠**: 各パターン選定の理由と、それが設計判断に与える影響を記述する
+- **Context Map 図**: Mermaid を使用してユニット間の関係パターンを視覚化する（書き込む前に `common/content-validation.md` に従って構文を検証する）
 
 ## ステップ 3: コンテキストに適した質問の生成
 **ディレクティブ**: 要件、ストーリー、アプリケーション設計を徹底的に分析して、確認によってユニット分解の品質が向上するすべての領域を特定する。分解に関わる懸念事項の包括的なカバレッジを確保するために積極的に質問する。
@@ -49,6 +54,7 @@
 **評価すべき質問カテゴリ**（すべてのカテゴリを考慮すること）:
 - **ストーリーのグルーピング** — グルーピング戦略、ストーリーの親和性、論理的なクラスタリングアプローチについて質問する
 - **依存関係** — 統合アプローチ、共有リソース、ユニット間のコミュニケーションパターンについて質問する
+- **コンテキスト間の関係パターン [JA 独自]** — ユニット間の関係の性質について質問する: 契約の主導権はどちらが持つか（Customer/Supplier）、共有モデルの範囲はどこまでか（Shared Kernel）、境界をまたぐデータ変換が必要か（Anti-Corruption Layer）、独立進化を許容するか（Conformist / Separate Ways）。依存関係マトリクスの各ペアに対して関係パターンを決定するための情報を収集する
 - **チームの整合性** — チーム構造、所有権の境界、コラボレーションモデルについて質問する
 - **技術的な考慮事項** — ユニット間で異なる可能性のあるスケーラビリティ/デプロイ要件について質問する
 - **ビジネスドメイン** — ドメインの境界、境界付けられたコンテキスト、ビジネス能力の整合性について質問する
@@ -183,6 +189,6 @@
 - 作業単位計画のすべてのステップが [x] とマークされている
 - 計画に従ってすべてのユニットアーティファクトが生成されている:
   - ユニット定義を含む `unit-of-work.md`
-  - 依存関係マトリクスを含む `unit-of-work-dependency.md`
+  - 依存関係マトリクスと Context Map（関係パターンマトリクス、根拠、Mermaid 図）を含む `unit-of-work-dependency.md`
   - ストーリーマッピングを含む `unit-of-work-story-map.md`
 - ユニットがユニット単位の設計ステージの準備ができており検証されている
