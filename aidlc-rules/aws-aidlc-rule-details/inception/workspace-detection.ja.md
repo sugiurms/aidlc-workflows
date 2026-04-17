@@ -23,8 +23,9 @@
 - **Programming Languages**: [見つかった場合はリスト]
 - **Build System**: [Maven/Gradle/npm/など（見つかった場合）]
 - **Project Structure**: [Monolith/Microservices/Library/Empty]
-- **Workspace Root**: [絶対パス]
 ```
+
+> **ワークスペースルートについて**: ワークスペースルートは git リポジトリルート（`git rev-parse --show-toplevel` で取得できるディレクトリ）として実行時に解決する。クローン先のパスに依存しないよう、絶対パスは記録しない。
 
 ## ステップ 3: 次のフェーズの決定
 
@@ -57,9 +58,9 @@
 ## ワークスペース状態
 - **既存コード**: [あり/なし]
 - **リバースエンジニアリング必要**: [あり/なし]
-- **ワークスペースルート**: [絶対パス]
 
 ## コード配置ルール
+- **ワークスペースルート**: git リポジトリルート（`git rev-parse --show-toplevel` で実行時に解決。絶対パスは記録しない）
 - **アプリケーションコード**: ワークスペースルート（aidlc-docs/ の中に置かない）
 - **ドキュメント**: aidlc-docs/ のみ
 - **Structure patterns**: code-generation.md のクリティカルルールを参照
