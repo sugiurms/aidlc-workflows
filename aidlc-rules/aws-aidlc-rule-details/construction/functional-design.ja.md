@@ -25,6 +25,8 @@
 ### ステップ 1: ユニットコンテキストの分析
 - `aidlc-docs/inception/application-design/unit-of-work.md` からユニット定義を読み込む
 - `aidlc-docs/inception/application-design/unit-of-work-story-map.md` から割り当てられたストーリーを読み込む
+- `aidlc-docs/inception/application-design/unit-of-work-dependency.md` から依存関係マトリクスと Context Map を読み込み、このユニットの Provider/Consumer の役割を把握する [JA 独自]
+- **Consumer ユニットの場合**: 依存先 Provider ユニットの契約仕様（`aidlc-docs/construction/{provider-unit-name}/functional-design/contract-specs.md`）が既に存在する場合はそれを読み込む [JA 独自]
 - ユニットの責務と境界を理解する
 
 ### ステップ 2: 機能設計計画の作成
@@ -48,6 +50,7 @@
 - **ビジネスルール** — 判断ルール、バリデーションロジック、制約、ビジネスポリシーについて質問する
 - **データフロー** — データの入出力、変換、永続化の要件について質問する
 - **統合ポイント** — 外部システムのインタラクション、API、データ交換について質問する
+- **サービス間契約仕様 [JA 独自]**（他ユニットとの依存がある場合）— Context Map の関係パターンに基づいて、このユニットが提供または消費する API 契約の詳細について質問する: リクエスト/レスポンススキーマ、エラーケースと状態遷移、契約の互換性ルール。Provider ユニットでは提供する契約を定義し、Consumer ユニットでは Provider の契約仕様との整合性を検証する
 - **エラー処理** — エラーシナリオ、バリデーション失敗、例外処理について質問する
 - **ビジネスシナリオ** — エッジケース、代替フロー、複雑なビジネス状況について質問する
 - **フロントエンドコンポーネント**（該当する場合）— UI コンポーネントの構造、ユーザーインタラクション、状態管理、フォーム処理について質問する
@@ -68,6 +71,10 @@
 - `aidlc-docs/construction/{unit-name}/functional-design/business-logic-model.md` を作成する
 - `aidlc-docs/construction/{unit-name}/functional-design/business-rules.md` を作成する
 - `aidlc-docs/construction/{unit-name}/functional-design/domain-entities.md` を作成する
+- 他ユニットとの依存がある場合（`unit-of-work-dependency.md` の依存関係マトリクス参照）: `aidlc-docs/construction/{unit-name}/functional-design/contract-specs.md` を作成する [JA 独自]
+  - **Provider の場合**: このユニットが提供する各エンドポイントの契約仕様（リクエスト/レスポンススキーマ、ステータスコード、エラーレスポンス、状態遷移）を定義する
+  - **Consumer の場合**: Provider の契約仕様（`aidlc-docs/construction/{provider-unit-name}/functional-design/contract-specs.md`）を参照し、このユニットが期待するインタラクションを定義する。Provider の契約仕様との不整合がある場合は**ブロッキング発見**として報告し、解消されるまでステージ完了を提示しない
+  - **契約の互換性ルール**: 後方互換性の要件、バージョニング戦略を記述する
 - ユニットにフロントエンド/UI が含まれる場合: `aidlc-docs/construction/{unit-name}/functional-design/frontend-components.md` を作成する
   - コンポーネント階層と構造
   - 各コンポーネントの props と状態の定義
