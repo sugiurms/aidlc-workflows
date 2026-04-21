@@ -224,58 +224,58 @@ linkStyle default stroke:#333,stroke-width:2px
 `aidlc-docs/inception/plans/execution-plan.md` を作成する:
 
 ```markdown
-# Execution Plan
+# 実行計画
 
-## Detailed Analysis Summary
+## 詳細分析サマリー
 
-### Transformation Scope (ブラウンフィールドのみ)
-- **Transformation Type**: [Single component/Architectural/Infrastructure]
-- **Primary Changes**: [説明]
-- **Related Components**: [リスト]
+### 変換スコープ（ブラウンフィールドのみ）
+- **変換タイプ**: [単一コンポーネント/アーキテクチャ/インフラストラクチャ]
+- **主要な変更**: [説明]
+- **関連コンポーネント**: [リスト]
 
-### Change Impact Assessment
-- **User-facing changes**: [Yes/No - 説明]
-- **Structural changes**: [Yes/No - 説明]
-- **Data model changes**: [Yes/No - 説明]
-- **API changes**: [Yes/No - 説明]
-- **NFR impact**: [Yes/No - 説明]
+### 変更影響の評価
+- **ユーザー向けの変更**: [はい/いいえ - 説明]
+- **構造的な変更**: [はい/いいえ - 説明]
+- **データモデルの変更**: [はい/いいえ - 説明]
+- **API の変更**: [はい/いいえ - 説明]
+- **非機能要件への影響**: [はい/いいえ - 説明]
 
-### Component Relationships (ブラウンフィールドのみ)
+### コンポーネント関係（ブラウンフィールドのみ）
 [コンポーネント依存関係グラフ]
 
-### Risk Assessment
-- **Risk Level**: [Low/Medium/High/Critical]
-- **Rollback Complexity**: [Easy/Moderate/Difficult]
-- **Testing Complexity**: [Simple/Moderate/Complex]
+### リスク評価
+- **リスクレベル**: [低/中/高/クリティカル]
+- **ロールバック複雑度**: [容易/中程度/困難]
+- **テスト複雑度**: [単純/中程度/複雑]
 
-## Workflow Visualization
+## ワークフロー可視化
 
 ```mermaid
 flowchart TD
-    Start(["User Request"])
+    Start(["ユーザーリクエスト"])
 
     subgraph INCEPTION["🔵 INCEPTION PHASE"]
-        WD["Workspace Detection<br/><b>STATUS</b>"]
-        RE["Reverse Engineering<br/><b>STATUS</b>"]
-        RA["Requirements Analysis<br/><b>STATUS</b>"]
-        US["User Stories<br/><b>STATUS</b>"]
-        WP["Workflow Planning<br/><b>STATUS</b>"]
-        AD["Application Design<br/><b>STATUS</b>"]
-        UP["Units Planning<br/><b>STATUS</b>"]
-        UG["Units Generation<br/><b>STATUS</b>"]
+        WD["ワークスペース検出<br/><b>STATUS</b>"]
+        RE["リバースエンジニアリング<br/><b>STATUS</b>"]
+        RA["要件分析<br/><b>STATUS</b>"]
+        US["ユーザーストーリー<br/><b>STATUS</b>"]
+        WP["ワークフロー計画<br/><b>STATUS</b>"]
+        AD["アプリケーション設計<br/><b>STATUS</b>"]
+        UP["ユニット計画<br/><b>STATUS</b>"]
+        UG["ユニット生成<br/><b>STATUS</b>"]
     end
 
     subgraph CONSTRUCTION["🟢 CONSTRUCTION PHASE"]
-        FD["Functional Design<br/><b>STATUS</b>"]
-        NFRA["NFR Requirements<br/><b>STATUS</b>"]
-        NFRD["NFR Design<br/><b>STATUS</b>"]
-        ID["Infrastructure Design<br/><b>STATUS</b>"]
-        CG["Code Generation<br/>(Planning + Generation)<br/><b>EXECUTE</b>"]
-        BT["Build and Test<br/><b>EXECUTE</b>"]
+        FD["機能設計<br/><b>STATUS</b>"]
+        NFRA["非機能要件<br/><b>STATUS</b>"]
+        NFRD["非機能要件設計<br/><b>STATUS</b>"]
+        ID["インフラストラクチャ設計<br/><b>STATUS</b>"]
+        CG["コード生成<br/>（計画 + 生成）<br/><b>EXECUTE</b>"]
+        BT["ビルドとテスト<br/><b>EXECUTE</b>"]
     end
 
     subgraph OPERATIONS["🟡 OPERATIONS PHASE"]
-        OPS["Operations<br/><b>PLACEHOLDER</b>"]
+        OPS["運用<br/><b>PLACEHOLDER</b>"]
     end
 
     Start --> WD
@@ -283,7 +283,7 @@ flowchart TD
     RA --> WP
     WP --> CG
     CG --> BT
-    BT --> End(["Complete"])
+    BT --> End(["完了"])
 
     %% STATUS を COMPLETED、SKIP、EXECUTE に置き換える
     %% ステータスに基づいて適切なスタイリングを適用する
@@ -291,54 +291,54 @@ flowchart TD
 
 **注記**: STATUS プレースホルダーを実際のフェーズステータス（COMPLETED/SKIP/EXECUTE）に置き換え、適切なスタイリングを適用する
 
-## Phases to Execute
+## 実行フェーズ
 
 ### 🔵 INCEPTION PHASE
-- [x] Workspace Detection (COMPLETED)
-- [x] Reverse Engineering (COMPLETED/SKIPPED)
-- [x] Requirements Analysis (COMPLETED)
-- [x] User Stories (COMPLETED/SKIPPED)
-- [x] Execution Plan (IN PROGRESS)
-- [ ] Application Design - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] Units Planning - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] Units Generation - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
+- [x] ワークスペース検出 (COMPLETED)
+- [x] リバースエンジニアリング (COMPLETED/SKIPPED)
+- [x] 要件分析 (COMPLETED)
+- [x] ユーザーストーリー (COMPLETED/SKIPPED)
+- [x] 実行計画 (IN PROGRESS)
+- [ ] アプリケーション設計 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] ユニット計画 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] ユニット生成 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
 
 ### 🟢 CONSTRUCTION PHASE
-- [ ] Functional Design - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] NFR Requirements - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] NFR Design - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] Infrastructure Design - [EXECUTE/SKIP]
-  - **Rationale**: [実行またはスキップする理由]
-- [ ] Code Generation - EXECUTE (ALWAYS)
-  - **Rationale**: 実装計画とコード生成が必要
-- [ ] Build and Test - EXECUTE (ALWAYS)
-  - **Rationale**: ビルド、テスト、検証が必要
+- [ ] 機能設計 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] 非機能要件 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] 非機能要件設計 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] インフラストラクチャ設計 - [EXECUTE/SKIP]
+  - **根拠**: [実行またはスキップする理由]
+- [ ] コード生成 - EXECUTE (ALWAYS)
+  - **根拠**: 実装計画とコード生成が必要
+- [ ] ビルドとテスト - EXECUTE (ALWAYS)
+  - **根拠**: ビルド、テスト、検証が必要
 
 ### 🟡 OPERATIONS PHASE
-- [ ] Operations - PLACEHOLDER
-  - **Rationale**: 将来のデプロイとモニタリングワークフロー
+- [ ] 運用 - PLACEHOLDER
+  - **根拠**: 将来のデプロイとモニタリングワークフロー
 
-## Package Change Sequence (ブラウンフィールドのみ)
+## パッケージ変更シーケンス（ブラウンフィールドのみ）
 [該当する場合、依存関係を含むパッケージ更新シーケンスをリストする]
 
-## Estimated Timeline
-- **Total Phases**: [数]
-- **Estimated Duration**: [時間の見積もり]
+## 見積もりタイムライン
+- **合計フェーズ数**: [数]
+- **見積もり所要時間**: [時間の見積もり]
 
-## Success Criteria
-- **Primary Goal**: [主な目的]
-- **Key Deliverables**: [リスト]
-- **Quality Gates**: [リスト]
+## 成功基準
+- **主要目標**: [主な目的]
+- **主要成果物**: [リスト]
+- **品質ゲート**: [リスト]
 
 [ブラウンフィールドの場合]
-- **Integration Testing**: すべてのコンポーネントが連携して動作している
-- **Operational Readiness**: モニタリング、ロギング、アラートが機能している
+- **統合テスト**: すべてのコンポーネントが連携して動作している
+- **運用準備**: モニタリング、ロギング、アラートが機能している
 ```
 
 ## ステップ 8: 状態トラッキングの初期化
