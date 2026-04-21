@@ -22,8 +22,8 @@
 - **固定された順序はない**: ステージは特定のタスクに合わせた順序で実行される
 
 ## チームの役割:
-- 専用の質問ファイルに `[Answer]:` タグと文字の選択肢 (A, B, C, D, E) を使って**質問に回答する**
-- **オプション E が利用可能**: 提供された選択肢が合わない場合は「その他」を選び、`[Answer]:` タグの後に独自の回答を記述できる
+- 専用の質問ファイルに [Answer]: タグと文字の選択肢 (A, B, C, D, E) を使って**質問に回答する**
+- **オプション E が利用可能**: 提供された選択肢が合わない場合は「その他」を選び、 [Answer]: タグの後に独自の回答を記述できる
 - 各フェーズの前に確認・承認するために**チームとして協力する**
 - 必要に応じてアーキテクチャアプローチを**共同で決定する**
 - **重要**: これはチームの取り組みです — 各フェーズで関連するステークホルダーを巻き込んでください
@@ -33,7 +33,7 @@
 ```mermaid
 flowchart TD
     Start(["User Request"])
-    
+
     subgraph INCEPTION["🔵 INCEPTION PHASE"]
         WD["Workspace Detection<br/><b>ALWAYS</b>"]
         RE["Reverse Engineering<br/><b>CONDITIONAL</b>"]
@@ -43,7 +43,7 @@ flowchart TD
         AppDesign["Application Design<br/><b>CONDITIONAL</b>"]
         UnitsG["Units Generation<br/><b>CONDITIONAL</b>"]
     end
-    
+
     subgraph CONSTRUCTION["🟢 CONSTRUCTION PHASE"]
         FD["Functional Design<br/><b>CONDITIONAL</b>"]
         NFRA["NFR Requirements<br/><b>CONDITIONAL</b>"]
@@ -52,20 +52,20 @@ flowchart TD
         CG["Code Generation<br/><b>ALWAYS</b>"]
         BT["Build and Test<br/><b>ALWAYS</b>"]
     end
-    
+
     subgraph OPERATIONS["🟡 OPERATIONS PHASE"]
         OPS["Operations<br/><b>PLACEHOLDER</b>"]
     end
-    
+
     Start --> WD
     WD -.-> RE
     WD --> RA
     RE --> RA
-    
+
     RA -.-> Stories
     RA --> WP
     Stories --> WP
-    
+
     WP -.-> AppDesign
     WP -.-> UnitsG
     AppDesign -.-> UnitsG
@@ -73,7 +73,7 @@ flowchart TD
     FD -.-> NFRA
     NFRA -.-> NFRD
     NFRD -.-> ID
-    
+
     WP --> CG
     FD --> CG
     NFRA --> CG
@@ -83,7 +83,7 @@ flowchart TD
     CG --> BT
     BT -.-> OPS
     BT --> End(["Complete"])
-    
+
     style WD fill:#4CAF50,stroke:#1B5E20,stroke-width:3px,color:#fff
     style RA fill:#4CAF50,stroke:#1B5E20,stroke-width:3px,color:#fff
     style WP fill:#4CAF50,stroke:#1B5E20,stroke-width:3px,color:#fff
@@ -105,7 +105,7 @@ flowchart TD
     style OPERATIONS fill:#FFF59D,stroke:#F57F17,stroke-width:3px, color:#000
     style Start fill:#CE93D8,stroke:#6A1B9A,stroke-width:3px,color:#000
     style End fill:#CE93D8,stroke:#6A1B9A,stroke-width:3px,color:#000
-    
+
     linkStyle default stroke:#333,stroke-width:2px
 ```
 
