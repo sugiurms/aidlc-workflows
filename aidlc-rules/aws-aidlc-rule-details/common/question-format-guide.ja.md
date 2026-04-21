@@ -25,7 +25,7 @@
 A) [1 番目の意味のある選択肢]
 B) [2 番目の意味のある選択肢]
 [...必要に応じて追加の選択肢...]
-X) Other (please describe after [Answer]: tag below)
+X) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
@@ -49,7 +49,7 @@ A) ユーザー名とパスワード
 B) ソーシャルメディアログイン（Google、Facebook）
 C) シングルサインオン（SSO）
 D) 多要素認証
-E) Other (please describe after [Answer]: tag below)
+E) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 
@@ -59,7 +59,7 @@ E) Other (please describe after [Answer]: tag below)
 A) ウェブアプリケーション
 B) モバイルアプリケーション
 C) ウェブとモバイルの両方
-D) Other (please describe after [Answer]: tag below)
+D) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 
@@ -68,7 +68,7 @@ D) Other (please describe after [Answer]: tag below)
 
 A) 新規プロジェクト（グリーンフィールド）
 B) 既存のコードベース（ブラウンフィールド）
-C) Other (please describe after [Answer]: tag below)
+C) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
@@ -120,7 +120,7 @@ A) リレーショナル（PostgreSQL、MySQL）
 B) NoSQL ドキュメント（MongoDB、DynamoDB）
 C) NoSQL キーバリュー（Redis、Memcached）
 D) グラフデータベース（Neo4j、Neptune）
-E) Other (please describe after [Answer]: tag below)
+E) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
@@ -280,7 +280,7 @@ D) [明確な選択肢 4]
 
 A) 新規プロジェクト（グリーンフィールド）
 B) 既存のコードベース（ブラウンフィールド）
-C) Other (please describe after [Answer]: tag below)
+C) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
@@ -293,7 +293,7 @@ C) Other (please describe after [Answer]: tag below)
 A) クラウド（AWS、Azure、GCP）
 B) オンプレミスサーバー
 C) ハイブリッド（クラウドとオンプレミスの両方）
-D) Other (please describe after [Answer]: tag below)
+D) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
@@ -307,7 +307,7 @@ A) モノリシックアーキテクチャ
 B) マイクロサービスアーキテクチャ
 C) サーバーレスアーキテクチャ
 D) イベント駆動アーキテクチャ
-E) Other (please describe after [Answer]: tag below)
+E) その他（下記の [Answer]: タグの後に記述してください）
 
 [Answer]: 
 ```
