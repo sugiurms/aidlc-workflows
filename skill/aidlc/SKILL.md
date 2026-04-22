@@ -3,7 +3,7 @@ name: aidlc
 description: "AIDLC (AI-Driven Development Life Cycle) ワークフローを日本語で実行します。構造化された適応型ソフトウェア開発プロセスを案内し、要件分析からコード生成まで各フェーズを通じて対話的に進行します。"
 argument-hint: "<プロジェクトの説明>"
 allowed-tools: [Read, Glob, Bash, Write, Edit, Grep]
-version: 0.1.7
+version: 0.1.8
 ---
 
 ## ユーザーの初期リクエスト
