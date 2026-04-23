@@ -259,7 +259,7 @@
 ### 変更リクエストのログフォーマット
 
 ```markdown
-## Change Request - [ステージ名]
+## 変更リクエスト - [ステージ名]
 **Timestamp**: [ISO タイムスタンプ]
 **Request**: [ユーザーが変更したいこと]
 **Current State**: [ワークフローの現在地]

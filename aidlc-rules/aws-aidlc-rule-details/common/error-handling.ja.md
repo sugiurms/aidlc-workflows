@@ -340,7 +340,7 @@
 ### エラーログのフォーマット
 
 ```markdown
-## Error - [ステージ名]
+## エラー - [ステージ名]
 **Timestamp**: [ISO タイムスタンプ]
 **Error Type**: [Critical/High/Medium/Low]
 **Description**: [何が問題だったか]
@@ -354,7 +354,7 @@
 ### 回復ログのフォーマット
 
 ```markdown
-## Recovery - [ステージ名]
+## 回復 - [ステージ名]
 **Timestamp**: [ISO タイムスタンプ]
 **Issue**: [何が回復を必要としたか]
 **Recovery Steps**: [何が行われたか]

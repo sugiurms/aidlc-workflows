@@ -345,7 +345,7 @@
 **必須**: `aidlc-docs/audit.md` にステージ完了を記録する:
 
 ```markdown
-## Build and Test Stage
+## ビルドとテストステージ
 **Timestamp**: [ISO タイムスタンプ]
 **Build Status**: [成功/失敗]
 **Test Status**: [合格/不合格]
