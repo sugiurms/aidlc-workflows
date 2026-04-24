@@ -346,10 +346,10 @@
 
 ```markdown
 ## ビルドとテストステージ
-**Timestamp**: [ISO タイムスタンプ]
-**Build Status**: [成功/失敗]
-**Test Status**: [合格/不合格]
-**Files Generated**:
+**タイムスタンプ**: [ISO タイムスタンプ]
+**ビルドステータス**: [成功/失敗]
+**テストステータス**: [合格/不合格]
+**生成ファイル**:
 - build-instructions.md
 - unit-test-instructions.md
 - integration-test-instructions.md
